@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "/Applications/Blender.app/Contents/Resources/4.2/python/bin/python3.x",
+    "python.analysis.extraPaths": [
+        "/Applications/Blender.app/Contents/Resources/4.2/scripts/startup",
+        "/Applications/Blender.app/Contents/Resources/4.2/scripts/modules",
+        "/Applications/Blender.app/Contents/Resources/4.2/python/lib/python311.zip",
+        "/Applications/Blender.app/Contents/Resources/4.2/python/lib/python3.11",
+        "/Applications/Blender.app/Contents/Resources/4.2/python/lib/python3.11/lib-dynload",
+        "/Applications/Blender.app/Contents/Resources/4.2/python/lib/python3.11/site-packages",
+        "/Applications/Blender.app/Contents/Resources/4.2/scripts/freestyle/modules",
+        "/Users/francisco/Library/Application Support/Blender/4.2/scripts/addons/modules",
+        "/Applications/Blender.app/Contents/Resources/4.2/scripts/addons_core",
+        "/Users/francisco/Library/Application Support/Blender/4.2/scripts/addons"
+
+    ]
+}

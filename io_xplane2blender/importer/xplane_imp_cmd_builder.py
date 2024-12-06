@@ -30,9 +30,11 @@ from typing import (
     Union,
 )
 
+
+
 import bmesh
 import bpy
-from mathutils import Euler, Matrix, Quaternion, Vector
+from mathutils import Euler, Matrix, Quaternion, Vector # type: ignore
 
 from io_xplane2blender.tests import test_creation_helpers
 from io_xplane2blender.tests.test_creation_helpers import (
