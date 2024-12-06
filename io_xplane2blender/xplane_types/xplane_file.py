@@ -59,6 +59,8 @@ def createFilesFromBlenderRootObjects(
     Returns a list of all created XPlaneFiles from all valid roots found,
     ignoring any that could not be created.
 
+    Implements the cerateFilesFromBlenderRootObject
+
     view_layer is needed to test exportability
     """
     xplane_files: List["XPlaneFile"] = []
@@ -101,6 +103,9 @@ def createFileFromBlenderRootObject(
     if not xplane_helpers.is_exportable_root(potential_root, view_layer):
         raise NotExportableRootError(f"{potential_root.name} is not a root")
     nested_roots: Set[PotentialRoot] = set()
+
+    """ Since only onre root is allowed on wich the others bild it would not be allowed for a root object to be submitted to another root
+    TODO Is this true? """
 
     def find_nested_roots(potential_roots: List[PotentialRoot]):
         nonlocal nested_roots
@@ -227,7 +232,7 @@ class XPlaneFile:
 
     def __init__(self, filename: str, options: xplane_props.XPlaneLayer) -> None:
         # A mapping of Blender Object names and the XPlaneBones they were turned into
-        # these are garunteed to be under the root bone
+        # these are garanteed to be under the root bone
         self.commands = XPlaneCommands(self)
         self.filename = filename
         self.options = options

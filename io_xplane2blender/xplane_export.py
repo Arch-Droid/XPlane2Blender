@@ -178,7 +178,9 @@ class EXPORT_OT_ExportXPlane(bpy.types.Operator, ExportHelper):
             self.logFile.close()
 
     def _writeXPlaneFile(
-        self, xplaneFile: xplane_file.XPlaneFile, directory: str
+        self, 
+        xplaneFile: xplane_file.XPlaneFile, 
+        directory: str
     ) -> bool:
         """
         Finally, at the end of it all, attempts to write an XPlaneFile.

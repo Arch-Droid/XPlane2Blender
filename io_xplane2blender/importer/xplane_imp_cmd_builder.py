@@ -32,7 +32,8 @@ from typing import (
 
 
 
-import bmesh
+# import bmesh 
+    # Not used therefore commented
 import bpy
 from mathutils import Euler, Matrix, Quaternion, Vector # type: ignore
 
